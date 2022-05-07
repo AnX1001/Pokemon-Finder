@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 50px;
+  text-align: center;
+  font-size: clamp(10px, 5vw, 15px);
+  
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+}
+
+.inp-name {
+  width: 100%;
+  height: clamp(40px, 15vw, 100px);
+  margin-top: 30px;
+  border: 3px solid black;
+  border-radius: 40px;
+  text-align: center;
+  background: linear-gradient(to right, #ffedbc, #ed4264);
+  padding: 20px;
+  margin-bottom: clamp(15px, 5vw, 40px);
+  font-size: clamp(12px, 10vw, 55px);
+  text-transform: uppercase;
+  opacity: 0.9;
+  outline: none;
+}
+
+.container-main-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  border: 6px solid black;
+  width: clamp(300px, 50vw, 450px);
+  height: clamp(300px, 50vw, 450px);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #ffedbc, #ed4264);
+}
+
+.card-image {
+  width: 80%;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.search-history {
+  min-height: 450px;
+  width: 750px;
+}
+
+.searched-card {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .search-history {
+    width: 100%;
+  }
+}
+
+.history-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1%;
+}
+
+@media only screen and (max-width: 768px) {
+  .history-list {
+    justify-content: center;
+  }
+}
+
+.pokeball-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+.pokeball-item-text {
+  display: grid;
+  text-align: left;
+  width: 200px;
+  align-items: center;
+}
+
+.pokeball-price-2020 {
+  text-decoration: line-through;
+}
+
+.pokeball-price-2021 {
+  font-weight: 700;
+}
+
+.pokeball-image {
+  content: url("https://cdn.pixabay.com/photo/2016/07/13/08/31/pokemon-1513925_960_720.jpg");
+  width: 80px;
+  padding: 5px;
+}
